@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+Grupo:
+Igor Ribeiro da Silva
+Marcus Vinícius Braga Terçariol da Silva
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para uma execução correta do projeto leia o documento com as observações necessárias.
 
-## Available Scripts
+1) No ponto 4 que solicita o desenvolvimento da página de automóveis foi necessária uma alteração na proposta inicial. As imagens dos carros devem ser obtidas em tempo de execução já que o usuário pode inserir qualquer imagem e o automóvel selecionado junto com sua imagem pode ser trocado. Caso a pasta com as imagens fique dentro de src, o Javascript/React adiciona um sufixo numérico no caminho da imagem, impossibilitando utilizar o local (Exemplo: a imagem está no diretório scr/auto/carro.jpg. Caso utilize na tag img esse caminho, será adicionar um sufixo como scr/auto/carro1212434234.jpg). Uma importação da imagem como componente funciona bem mas não atende a demanda do trabalho. Por isso, adicione a pasta auto com as imagens na pasta public do projeto react (Exemplo: public/auto/carro.jpg).
 
-In the project directory, you can run:
+2) Para a parte das galerias, como estava ocorrendo o mesmo problema da tela dos automóveis, foi movido a pasta da galeria para a pasta public, de modo que a galeria pudesse mostrar as imagens de forma correta.
 
-### `npm start`
+3) Além disto, foram instaladas 3 bibliotecas React para a execução do trabalho: MUI, Axios e React Router Dom.
+As dependências destas bibliotecas estão presentes no arquivo package.json, mas para instalá-las no projeto, deve-se executar os seguintes 3 comandos abaixo (com o npm. Para outros gerenciadores de pacotes, os comandos podem ser diferentes):
+- npm install axios
+- npm install @mui/material @emotion/react @emotion/styled
+- npm install react-router-dom
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mas apenas com a execução do comando "npm install", já estará sendo instaladas todas as biliotecas relacionadas ao react, bem como as dependências citadas neste item.
