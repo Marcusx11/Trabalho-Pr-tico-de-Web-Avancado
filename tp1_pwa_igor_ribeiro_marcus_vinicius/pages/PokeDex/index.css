@@ -1,0 +1,10 @@
+.carregando-pokemons {
+  text-align: center;
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+}
+
+.poke-card {
+  background: linear-gradient(gray, transparent);
+}
