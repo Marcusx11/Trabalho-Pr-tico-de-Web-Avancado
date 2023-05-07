@@ -1,12 +1,15 @@
 import { Container } from "@mui/material";
 import React from "react";
+import NavBar from "../../components/NavBar";
 import "./index.css";
 
 const PaginaPrincipal = () => {
   return (
     <>
+      <NavBar />
+
       <Container maxWidth="lx" className="conteudo-principal">
-        <h1>ESTA É A PÁGINA PRINCIPAL!!</h1>
+        <h1>ESTA É A PÁGINA PRINCIPAL!</h1>
         <h3>
           Para navegar nas demais páginas, clique nos botões presentes na Barra
           de Navegação do topo da página.

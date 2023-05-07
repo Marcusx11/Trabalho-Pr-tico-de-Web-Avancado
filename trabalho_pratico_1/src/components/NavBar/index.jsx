@@ -6,8 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const NavBar = () => {
   const paginas = [
@@ -17,7 +16,6 @@ const NavBar = () => {
       color: "text.primary",
       href: "#",
       sx: { my: 1, mx: 1.5 },
-      url: "/",
     },
     {
       nome: "GALERIA",
@@ -25,7 +23,6 @@ const NavBar = () => {
       color: "text.primary",
       href: "#",
       sx: { my: 1, mx: 1.5 },
-      url: "/galeria",
     },
     {
       nome: "LISTA DE FRUTAS",
@@ -33,7 +30,6 @@ const NavBar = () => {
       color: "text.primary",
       href: "#",
       sx: { my: 1, mx: 1.5 },
-      url: "/frutas",
     },
     {
       nome: "AUTOMÓVEIS",
@@ -41,7 +37,6 @@ const NavBar = () => {
       color: "text.primary",
       href: "#",
       sx: { my: 1, mx: 1.5 },
-      url: "/automovel",
     },
     {
       nome: "POKÉ-DEX",
@@ -49,28 +44,9 @@ const NavBar = () => {
       color: "text.primary",
       href: "#",
       sx: { my: 1, mx: 1.5 },
-      url: "/poke-dex",
-    },
-    {
-      nome: "USUÁRIOS",
-      variant: "button",
-      color: "text.primary",
-      href: "#",
-      sx: { my: 1, mx: 1.5 },
-      url: "/usuarios",
     },
   ];
   const [paginaAtual, setPaginaAtual] = useState("PÁGINA PRINCIPAL");
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    paginas.map((pag) => {
-      if (pag.url === pathname) {
-        setPaginaAtual(pag.nome);
-      }
-      return pag;
-    });
-  }, []);
 
   return (
     <>
@@ -90,16 +66,16 @@ const NavBar = () => {
           </Typography>
           <nav>
             {paginas.map((pagina) => (
-              <Link to={pagina.url} key={pagina.nome}>
-                <Button
-                  onClick={() => setPaginaAtual(pagina.nome)}
-                  variant={pagina.variant}
-                  color={pagina.color}
-                  sx={pagina.sx}
-                >
-                  {pagina.nome}
-                </Button>
-              </Link>
+              <Button
+                onClick={() => {}}
+                key={pagina.nome}
+                variant={pagina.variant}
+                color={pagina.color}
+                href={pagina.href}
+                sx={pagina.sx}
+              >
+                {pagina.nome}
+              </Button>
             ))}
           </nav>
         </Toolbar>
