@@ -51,28 +51,29 @@ class Automovel extends React.Component {
     render() {
         return (
             <>
+              <Container maxWidth="lx" className="conteudo-principal">
+                <h1>AUTOMOVEL</h1>
+              </Container>
 
-                <Container maxWidth="lx" className="conteudo-principal">
-                    <h1>AUTOMOVEL</h1>
-                </Container>
-
-                <Grid
-                    container
-                    spacing={0}
-                    direction="column"
-                    alignItems="center"
-                    justifyContent="center"
-                >
-
-                    <Grid item xs={3}>
-                        <FormControl sx={{ m: 1, minWidth: 360 }} size="small">
-                            {this.state.automovelSel != null ? <h3>É um {this.state.automovelSel}</h3> : <div></div>}
-                            <AutomovelChild automovel={this.state.automovelSel} automoveis={this.state.automoveis}
-                                adicionaAutomovel={this.adicionaAutomovel} alteraAutomovel={this.alteraAutomovel}
-                                deletaAutomovel={this.deletaAutomovel} />
-                        </FormControl>
-                    </Grid>
+              <Grid
+                container
+                spacing={0}
+                direction="column"
+                alignItems="center"
+                justifyContent="center"
+              >
+                <Grid item xs={3}>
+                  <FormControl sx={{ m: 1, minWidth: 360 }} size="small">
+                    {this.state.automovelSel != null ? <h3>É um {this.state.automovelSel}</h3> : <div></div>}
+                      <AutomovelChild 
+												automovel={this.state.automovelSel} 
+												automoveis={this.state.automoveis}
+												adicionaAutomovel={this.adicionaAutomovel}
+												alteraAutomovel={this.alteraAutomovel}
+                        deletaAutomovel={this.deletaAutomovel} />
+                  </FormControl>
                 </Grid>
+              </Grid>
             </>
         )
     }
