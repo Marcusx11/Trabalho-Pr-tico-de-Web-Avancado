@@ -1,5 +1,6 @@
 Grupo:
-Igor Ribeiro da Silva
+Fernando Martinho Nascimento
+Giovanne Sainatto Torres
 Marcus Vinícius Braga Terçariol da Silva
 
 Para uma execução correta do projeto leia o documento com as observações necessárias.
