@@ -4,10 +4,9 @@ import NavBar from "./components/NavBar";
 
 import PaginaPrincipal from "./pages/PaginaPrincipal";
 import Automovel from "./pages/Automovel/Automovel";
-import PokeDex from "./pages/PokeDex";
+import CardDeck from "./pages/CardDeck/CardDeck";
 import Frutas from "./pages/Frutas/Frutas";
 import Galeria from "./pages/Galeria";
-import Usuarios from "./pages/Api_Usuarios/Usuarios";
 
 function Main() {
 	return (
@@ -18,10 +17,9 @@ function Main() {
 
       <Routes>
         <Route element={<PaginaPrincipal />} path="/" exact />
-        <Route element={<PokeDex />} path="/poke-dex" />
+        <Route element={<CardDeck />} path="/card-deck" />
         <Route element={<Automovel />} path="/automovel" />
         <Route element={<Frutas />} path="/frutas" />
-        <Route element={<Usuarios />} path="/usuarios" />
         <Route element={<Galeria />} path="/galeria" />
       </Routes>
     </Router>
