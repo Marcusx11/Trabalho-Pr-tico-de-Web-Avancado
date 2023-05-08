@@ -43,22 +43,16 @@ const NavBar = () => {
       sx: { my: 1, mx: 1.5 },
       url: "/automovel",
     },
+
     {
-      nome: "POKÉ-DEX",
+      nome: "CARD-DECK",
       variant: "button",
       color: "text.primary",
       href: "#",
       sx: { my: 1, mx: 1.5 },
-      url: "/poke-dex",
+      url: "/card-deck",
     },
-    {
-      nome: "USUÁRIOS",
-      variant: "button",
-      color: "text.primary",
-      href: "#",
-      sx: { my: 1, mx: 1.5 },
-      url: "/usuarios",
-    },
+
   ];
   const [paginaAtual, setPaginaAtual] = useState("PÁGINA PRINCIPAL");
   const { pathname } = useLocation();
