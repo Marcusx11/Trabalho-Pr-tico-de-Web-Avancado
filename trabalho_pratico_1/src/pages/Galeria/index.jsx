@@ -23,7 +23,7 @@ const Galeria = () => {
   };
 
   const deletaImagem = (numImagem) => {
-    setImagens(imagens.filter((i) => i.id !== numImagem))
+    setImagens(imagens.filter((i) => i.id !== numImagem));
   };
 
   console.log(imagens);
@@ -48,7 +48,7 @@ const Galeria = () => {
                   }}
                 />
                 <img
-                  src={"galeria/" + i.id + ".jpg"}
+                  src={require("../../galeria/imagem" + i.id + ".jpg")}
                   alt={i.id}
                   width="250"
                   height="200"
